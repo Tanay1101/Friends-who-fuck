@@ -1,103 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Will You Be My Valentine?</title>
-<style>
-    body {
-        margin: 0;
-        font-family: 'Arial', sans-serif;
-        text-align: center;
-        background: linear-gradient(-45deg, #ff4e88, #ff8fb1, #ff2e63, #ffb3c6);
-        background-size: 400% 400%;
-        animation: gradient 8s ease infinite;
-        color: white;
-        overflow: hidden;
-    }
-
-    @keyframes gradient {
-        0% { background-position: 0% 50%; }
-        50% { background-position: 100% 50%; }
-        100% { background-position: 0% 50%; }
-    }
-
-    .container {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    h1 {
-        font-size: 2.5em;
-    }
-
-    button {
-        padding: 15px 30px;
-        font-size: 18px;
-        border: none;
-        border-radius: 30px;
-        margin: 15px;
-        cursor: pointer;
-        transition: 0.3s;
-    }
-
-    #yesBtn {
-        background-color: #fff;
-        color: #ff2e63;
-    }
-
-    #noBtn {
-        background-color: #222;
-        color: white;
-        position: absolute;
-    }
-
-    #finalMessage {
-        display: none;
-        font-size: 2em;
-        animation: fadeIn 2s forwards;
-    }
-
-    @keyframes fadeIn {
-        from { opacity: 0; }
-        to { opacity: 1; }
-    }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Friends who fuck</title>
+    <style>
+        /* Ensure all content is visible with proper positioning */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+        main {
+            flex: 1;
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+        }
+    </style>
 </head>
 <body>
-
-<div class="container" id="mainContent">
-    <h1>PREKSHA ❤️</h1>
-    <h1>Will you be my Valentine?</h1>
-    <button id="yesBtn">Yes 💖</button>
-    <button id="noBtn">No 😢</button>
-</div>
-
-<div class="container" id="finalMessage">
-    <h1>YAYYY!!! 💕</h1>
-    <p>You just made me the happiest person alive ❤️</p>
-</div>
-
-<script>
-const noBtn = document.getElementById("noBtn");
-const yesBtn = document.getElementById("yesBtn");
-const mainContent = document.getElementById("mainContent");
-const finalMessage = document.getElementById("finalMessage");
-
-noBtn.addEventListener("mouseover", () => {
-    const x = Math.floor(Math.random() * window.innerWidth - 100);
-    const y = Math.floor(Math.random() * window.innerHeight - 50);
-    noBtn.style.left = x + "px";
-    noBtn.style.top = y + "px";
-});
-
-yesBtn.addEventListener("click", () => {
-    mainContent.style.display = "none";
-    finalMessage.style.display = "block";
-});
-</script>
-
+    <header>
+        <h1>Friends who fuck</h1>
+    </header>
+    <main>
+        <h2>Welcome! Here you can connect with friends.</h2>
+        <!-- Additional content goes here -->
+    </main>
+    <footer>
+        <p>&copy; 2026 Friends who fuck. All rights reserved.</p>
+    </footer>
 </body>
 </html>
